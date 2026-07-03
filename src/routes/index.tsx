@@ -102,8 +102,8 @@ function UpsellPage() {
             <img
               src={comboMockup.url}
               alt="Combo digital: Tablet, Celular y Libros del Planificador Semanal"
-              width={1280}
-              height={1024}
+              width={1100}
+              height={1100}
               fetchPriority="high"
               decoding="async"
               className="relative w-full rounded-xl"
