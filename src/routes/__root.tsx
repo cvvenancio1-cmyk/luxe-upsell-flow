@@ -111,8 +111,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "requestAnimationFrame(function(){document.querySelectorAll('link[rel=stylesheet][media=print]').forEach(function(l){l.media='all'})});",
       },
     ],
-    linksBefore: [
-    ],
   }),
   shellComponent: RootShell,
   component: RootComponent,
