@@ -129,6 +129,26 @@ function UpsellPage() {
               </div>
             </div>
           </article>
+
+          <article className="rounded-2xl border border-white/10 bg-[#111111] p-6 sm:p-8">
+            <div className="flex gap-4">
+              <Check />
+              <div>
+                <h3 className="text-lg font-semibold text-white sm:text-xl">
+                  🍽️ Plan de Comida Alto en Proteínas{" "}
+                  <span className="text-gold">(7 Días / 1200 Calorías)</span>
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground sm:text-base">
+                  Un plan alimenticio estructurado de 7 días diseñado para
+                  maximizar el consumo de proteínas y favorecer la pérdida de
+                  peso saludable. Con solo 1200 calorías diarias, cada comida
+                  está cuidadosamente equilibrada para nutrir el cuerpo,
+                  preservar la masa muscular y mantener la saciedad a lo largo
+                  del día.
+                </p>
+              </div>
+            </div>
+          </article>
         </section>
 
         {/* Bonuses */}
