@@ -60,7 +60,7 @@ function UpsellPage() {
           <div className="relative mx-auto max-w-2xl overflow-hidden rounded-2xl border border-gold/40 bg-[#0d0d0d] p-2 shadow-[0_30px_80px_-30px_rgba(212,175,55,0.4)]">
             <div className="pointer-events-none absolute inset-0 rounded-2xl bg-gradient-gold opacity-20 blur-2xl" />
             <img
-              src={comboMockup}
+              src={comboMockup.url}
               alt="Combo digital: Tablet, Celular y Libros del Planificador Semanal"
               width={1280}
               height={1024}
