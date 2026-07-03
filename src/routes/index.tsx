@@ -1,8 +1,44 @@
 import { createFileRoute } from "@tanstack/react-router";
 import comboMockup from "@/assets/combo-hook.webp.asset.json";
 
+const PAGE_URL = "https://luxe-upsell-flow.lovable.app/";
+
 export const Route = createFileRoute("/")({
   component: UpsellPage,
+  head: () => ({
+    links: [{ rel: "canonical", href: PAGE_URL }],
+    meta: [{ property: "og:url", content: PAGE_URL }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Product",
+          name: "Planificador de Menús Semanales + Guía de Sustituciones Inteligentes",
+          description:
+            "Planificador semanal, tabla de sustituciones inteligentes y plan de comida alto en proteínas de 7 días con 2 bonos internacionales.",
+          image: comboMockup.url,
+          brand: { "@type": "Brand", name: "Cocina Saludable" },
+          offers: {
+            "@type": "Offer",
+            price: "9.90",
+            priceCurrency: "USD",
+            availability: "https://schema.org/InStock",
+            url: PAGE_URL,
+          },
+        }),
+      },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          name: "Cocina Saludable",
+          url: PAGE_URL,
+        }),
+      },
+    ],
+  }),
 });
 
 function Check() {
@@ -41,12 +77,16 @@ function UpsellPage() {
         </p>
 
         {/* Headline */}
-        <h1 className="mt-8 text-center text-3xl font-extrabold uppercase leading-[1.05] tracking-tight sm:text-5xl md:text-6xl">
+        <div
+          role="text"
+          aria-label="¡Espera! No vayas a la cocina todavía"
+          className="mt-8 text-center text-3xl font-extrabold uppercase leading-[1.05] tracking-tight sm:text-5xl md:text-6xl"
+        >
           <span className="block text-white">🛑 ¡ESPERA!</span>
           <span className="mt-2 block gold-text-gradient">
             NO VAYAS A LA COCINA TODAVÍA…
           </span>
-        </h1>
+        </div>
 
         <p className="mx-auto mt-6 max-w-2xl text-center text-base font-light leading-relaxed text-platinum sm:text-lg">
           ¿Sabías que el{" "}
@@ -64,6 +104,8 @@ function UpsellPage() {
               alt="Combo digital: Tablet, Celular y Libros del Planificador Semanal"
               width={1280}
               height={1024}
+              fetchPriority="high"
+              decoding="async"
               className="relative w-full rounded-xl"
             />
           </div>
@@ -74,12 +116,12 @@ function UpsellPage() {
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-gold">
             Oferta Exclusiva de 1 Clic
           </p>
-          <h2 className="mt-4 font-display text-3xl leading-tight text-white sm:text-5xl">
+          <h1 className="mt-4 font-display text-3xl leading-tight text-white sm:text-5xl">
             Planificador de Menús Semanales
             <span className="mt-2 block italic gold-text-gradient">
               + Guía de Sustituciones Inteligentes
             </span>
-          </h2>
+          </h1>
           <p className="mx-auto mt-6 max-w-2xl text-base font-light leading-relaxed text-platinum sm:text-lg">
             Tener 700 recetas es espectacular, pero con tanta variedad, el mayor
             peligro es quedar perdido sin saber qué cocinar cada lunes, o gastar

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://luxe-upsell-flow.lovable.app/sitemap.xml
