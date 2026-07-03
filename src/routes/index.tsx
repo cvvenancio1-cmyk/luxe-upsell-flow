@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { useEffect } from "react";
 import comboMockup from "@/assets/combo-hook.webp.asset.json";
 import comboMockupSm from "@/assets/combo-hook-sm.webp.asset.json";
 
