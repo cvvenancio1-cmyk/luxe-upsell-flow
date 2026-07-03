@@ -36,7 +36,7 @@ function UpsellPage() {
         {/* Confirmation */}
         <p className="text-center text-sm font-light text-platinum sm:text-base">
           ¡Felicidades! Tu acceso al{" "}
-          <span className="font-semibold text-gold">E-book de 700 Recetas</span>{" "}
+          <span className="font-semibold text-gold">Código de la Cocina Fitness</span>{" "}
           ya fue enviado a tu correo.
         </p>
 
