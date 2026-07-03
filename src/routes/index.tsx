@@ -198,17 +198,17 @@ function UpsellPage() {
         <section className="mt-10">
           <button
             type="button"
-            className="cta-glow group relative block w-full overflow-hidden rounded-2xl bg-gradient-olive px-6 py-6 text-center transition-transform duration-200 hover:scale-[1.015] active:scale-[0.99] sm:px-8 sm:py-7"
+            className="cta-glow group relative block w-full overflow-hidden rounded-full bg-gradient-gold px-6 py-6 text-center shadow-[0_20px_60px_-15px_rgba(212,175,55,0.6)] transition-transform duration-200 hover:scale-[1.015] active:scale-[0.99] sm:px-8 sm:py-7"
           >
-            <span className="block text-lg font-extrabold uppercase leading-tight tracking-wide text-white sm:text-2xl">
-              ¡SÍ! Quiero el descuento, el planificador y mis bonos
+            <span className="block text-lg font-extrabold uppercase leading-tight tracking-wide text-[#0a0a0a] sm:text-2xl">
+              ¡SÍ! QUIERO EL DESCUENTO, EL PLANIFICADOR Y MIS BONOS
             </span>
-            <span className="mt-2 block text-xs font-medium text-white/85 sm:text-sm">
+            <span className="mt-2 block text-xs font-medium text-[#0a0a0a]/80 sm:text-sm">
               Añadir a mi orden con 1 solo clic por $9.99 USD
             </span>
           </button>
 
-          <div className="mt-8 text-center">
+          <div className="mt-10 text-center">
             <a
               href="#decline"
               className="text-sm font-light text-muted-foreground underline decoration-muted-foreground/50 underline-offset-4 transition-colors hover:text-platinum"
@@ -218,6 +218,7 @@ function UpsellPage() {
             </a>
           </div>
         </section>
+
 
         <footer className="mt-16 border-t border-white/5 pt-8 text-center">
           <p className="text-[11px] uppercase tracking-[0.25em] text-muted-foreground">
