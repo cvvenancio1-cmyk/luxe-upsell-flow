@@ -77,12 +77,16 @@ function UpsellPage() {
         </p>
 
         {/* Headline */}
-        <h1 className="mt-8 text-center text-3xl font-extrabold uppercase leading-[1.05] tracking-tight sm:text-5xl md:text-6xl">
+        <div
+          role="text"
+          aria-label="¡Espera! No vayas a la cocina todavía"
+          className="mt-8 text-center text-3xl font-extrabold uppercase leading-[1.05] tracking-tight sm:text-5xl md:text-6xl"
+        >
           <span className="block text-white">🛑 ¡ESPERA!</span>
           <span className="mt-2 block gold-text-gradient">
             NO VAYAS A LA COCINA TODAVÍA…
           </span>
-        </h1>
+        </div>
 
         <p className="mx-auto mt-6 max-w-2xl text-center text-base font-light leading-relaxed text-platinum sm:text-lg">
           ¿Sabías que el{" "}
