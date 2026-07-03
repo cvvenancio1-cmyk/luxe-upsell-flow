@@ -104,6 +104,8 @@ function UpsellPage() {
               alt="Combo digital: Tablet, Celular y Libros del Planificador Semanal"
               width={1280}
               height={1024}
+              fetchPriority="high"
+              decoding="async"
               className="relative w-full rounded-xl"
             />
           </div>
