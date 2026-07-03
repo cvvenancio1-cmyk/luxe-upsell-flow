@@ -71,6 +71,21 @@ function Check() {
 }
 
 function UpsellPage() {
+  useEffect(() => {
+    if (document.getElementById("hotmart-widget-script")) return;
+    const script = document.createElement("script");
+    script.id = "hotmart-widget-script";
+    script.src = "https://static.hotmart.com/checkout/widget.min.js";
+    script.async = true;
+    document.head.appendChild(script);
+
+    const link = document.createElement("link");
+    link.id = "hotmart-widget-style";
+    link.rel = "stylesheet";
+    link.href = "https://static.hotmart.com/css/hotmart-fb.min.css";
+    document.head.appendChild(link);
+  }, []);
+
   return (
     <main className="min-h-screen bg-background text-foreground">
       {/* Top alert bar */}
