@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import comboMockup from "@/assets/combo-hook.webp.asset.json";
+import comboMockupSm from "@/assets/combo-hook-sm.webp.asset.json";
 
 const PAGE_URL = "https://luxe-upsell-flow.lovable.app/";
 
@@ -100,7 +101,9 @@ function UpsellPage() {
           <div className="relative mx-auto max-w-2xl overflow-hidden rounded-2xl border border-gold/40 bg-[#0d0d0d] p-2 shadow-[0_30px_80px_-30px_rgba(212,175,55,0.4)]">
 
             <img
-              src={comboMockup.url}
+              src={comboMockupSm.url}
+              srcSet={`${comboMockupSm.url} 700w, ${comboMockup.url} 1100w`}
+              sizes="(max-width: 640px) 100vw, 672px"
               alt="Combo digital: Tablet, Celular y Libros del Planificador Semanal"
               width={1100}
               height={1100}
