@@ -113,6 +113,6 @@
 }
 
 @utility alert-blink {
-  /* animation removed for performance */
+  opacity: 1;
 }
 
