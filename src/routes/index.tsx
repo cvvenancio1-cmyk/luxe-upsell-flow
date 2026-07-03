@@ -207,9 +207,6 @@ function UpsellPage() {
             </p>
             <p className="mt-2 font-display text-7xl font-bold sm:text-8xl">
               <span className="gold-text-gradient">$9.90</span>
-              <span className="ml-2 align-top text-2xl text-gold sm:text-3xl">
-                USD
-              </span>
             </p>
           </div>
         </section>
