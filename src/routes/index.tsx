@@ -114,12 +114,12 @@ function UpsellPage() {
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-gold">
             Oferta Exclusiva de 1 Clic
           </p>
-          <h2 className="mt-4 font-display text-3xl leading-tight text-white sm:text-5xl">
+          <h1 className="mt-4 font-display text-3xl leading-tight text-white sm:text-5xl">
             Planificador de Menús Semanales
             <span className="mt-2 block italic gold-text-gradient">
               + Guía de Sustituciones Inteligentes
             </span>
-          </h2>
+          </h1>
           <p className="mx-auto mt-6 max-w-2xl text-base font-light leading-relaxed text-platinum sm:text-lg">
             Tener 700 recetas es espectacular, pero con tanta variedad, el mayor
             peligro es quedar perdido sin saber qué cocinar cada lunes, o gastar
