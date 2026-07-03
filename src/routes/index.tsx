@@ -221,7 +221,7 @@ function UpsellPage() {
               ¡SÍ! QUIERO EL DESCUENTO, EL PLANIFICADOR Y MIS BONOS
             </span>
             <span className="mt-2 block text-xs font-medium text-[#0a0a0a]/80 sm:text-sm">
-              Añadir a mi orden con 1 solo clic por $9.90 USD
+              Añadir a mi orden con 1 solo clic por $9.90
             </span>
           </button>
 
