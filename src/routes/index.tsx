@@ -1,5 +1,4 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useEffect } from "react";
 import comboMockup from "@/assets/combo-hook.webp.asset.json";
 import comboMockupSm from "@/assets/combo-hook-sm.webp.asset.json";
 
@@ -71,20 +70,7 @@ function Check() {
 }
 
 function UpsellPage() {
-  useEffect(() => {
-    if (document.getElementById("hotmart-widget-script")) return;
-    const script = document.createElement("script");
-    script.id = "hotmart-widget-script";
-    script.src = "https://static.hotmart.com/checkout/widget.min.js";
-    script.async = true;
-    document.head.appendChild(script);
 
-    const link = document.createElement("link");
-    link.id = "hotmart-widget-style";
-    link.rel = "stylesheet";
-    link.href = "https://static.hotmart.com/css/hotmart-fb.min.css";
-    document.head.appendChild(link);
-  }, []);
 
   return (
     <main className="min-h-screen bg-background text-foreground">
@@ -284,19 +270,7 @@ function UpsellPage() {
             </p>
           </div>
         </section>
-
-        {/* Hotmart Sales Funnel */}
-        <section className="mt-10">
-          <div
-            id="hotmart-sales-funnel"
-            className="mx-auto flex w-full max-w-xl flex-col items-stretch justify-center gap-4"
-            style={{ minHeight: "184px" }}
-          />
-        </section>
-
-
-
-        <footer className="mt-16 border-t border-white/5 pt-8 text-center">
+        <footer className="mt-10 pt-6 text-center">
           <p className="text-[11px] uppercase tracking-[0.25em] text-muted-foreground">
             Compra 100% Segura · Acceso Inmediato
           </p>
