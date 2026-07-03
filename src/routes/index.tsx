@@ -1,5 +1,4 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useEffect } from "react";
 import comboMockup from "@/assets/combo-hook.webp.asset.json";
 import comboMockupSm from "@/assets/combo-hook-sm.webp.asset.json";
 
@@ -71,20 +70,7 @@ function Check() {
 }
 
 function UpsellPage() {
-  useEffect(() => {
-    if (document.getElementById("hotmart-widget-script")) return;
-    const script = document.createElement("script");
-    script.id = "hotmart-widget-script";
-    script.src = "https://static.hotmart.com/checkout/widget.min.js";
-    script.async = true;
-    document.head.appendChild(script);
 
-    const link = document.createElement("link");
-    link.id = "hotmart-widget-style";
-    link.rel = "stylesheet";
-    link.href = "https://static.hotmart.com/css/hotmart-fb.min.css";
-    document.head.appendChild(link);
-  }, []);
 
   return (
     <main className="min-h-screen bg-background text-foreground">
