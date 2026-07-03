@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import comboMockup from "@/assets/combo-mockup.jpg";
+import comboMockup from "@/assets/combo-hook.webp.asset.json";
 
 export const Route = createFileRoute("/")({
   component: UpsellPage,
