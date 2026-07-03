@@ -122,7 +122,7 @@ function UpsellPage() {
               + Guía de Sustituciones Inteligentes
             </span>
             <span className="mt-2 block italic gold-text-gradient">
-              + Plan de Comida Alto en Proteínas (7 Días / 1200 Calorías)
+              + Plan de Comida Alto en Proteínas 7 Días / 1200 Calorías
             </span>
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-base font-light leading-relaxed text-platinum sm:text-lg">
