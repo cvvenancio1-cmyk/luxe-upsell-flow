@@ -254,7 +254,7 @@ function UpsellPage() {
           <p className="text-base font-light text-platinum sm:text-lg">
             Este combo completo está valorado en más de{" "}
             <span className="font-semibold text-white/60 line-through decoration-red-500/70 decoration-2">
-              $77 USD
+              $67 USD
             </span>
             , pero hoy te llevas todo por solo:
           </p>
