@@ -225,13 +225,12 @@ function UpsellPage() {
             </span>
           </button>
 
-          <div className="mt-10 text-center">
+          <div className="mt-12 text-center">
             <a
               href="#decline"
-              className="text-sm font-light text-muted-foreground underline decoration-muted-foreground/50 underline-offset-4 transition-colors hover:text-platinum"
+              className="text-xs font-light tracking-wide text-muted-foreground/80 underline decoration-muted-foreground/40 underline-offset-[6px] transition-colors hover:text-platinum"
             >
-              No, gracias. Prefiero organizar mi menú a ciegas y dejar pasar
-              estos 2 libros de regalo.
+              No, gracias. Prefiero continuar con mi pedido actual.
             </a>
           </div>
         </section>
