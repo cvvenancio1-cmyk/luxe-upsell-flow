@@ -7,7 +7,17 @@ const PAGE_URL = "https://luxe-upsell-flow.lovable.app/";
 export const Route = createFileRoute("/")({
   component: UpsellPage,
   head: () => ({
-    links: [{ rel: "canonical", href: PAGE_URL }],
+    links: [
+      { rel: "canonical", href: PAGE_URL },
+      {
+        rel: "preload",
+        as: "image",
+        href: comboMockupSm.url,
+        imageSrcSet: `${comboMockupSm.url} 700w, ${comboMockup.url} 1100w`,
+        imageSizes: "(max-width: 640px) 100vw, 672px",
+        fetchPriority: "high",
+      },
+    ],
     meta: [{ property: "og:url", content: PAGE_URL }],
     scripts: [
       {
