@@ -270,19 +270,7 @@ function UpsellPage() {
             </p>
           </div>
         </section>
-
-        {/* Hotmart Sales Funnel */}
-        <section className="mt-10">
-          <div
-            id="hotmart-sales-funnel"
-            className="mx-auto flex w-full max-w-xl flex-col items-stretch justify-center gap-4"
-            style={{ minHeight: "184px" }}
-          />
-        </section>
-
-
-
-        <footer className="mt-16 border-t border-white/5 pt-8 text-center">
+        <footer className="mt-10 pt-6 text-center">
           <p className="text-[11px] uppercase tracking-[0.25em] text-muted-foreground">
             Compra 100% Segura · Acceso Inmediato
           </p>
