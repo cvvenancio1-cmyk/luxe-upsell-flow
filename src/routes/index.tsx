@@ -1,8 +1,44 @@
 import { createFileRoute } from "@tanstack/react-router";
 import comboMockup from "@/assets/combo-hook.webp.asset.json";
 
+const PAGE_URL = "https://luxe-upsell-flow.lovable.app/";
+
 export const Route = createFileRoute("/")({
   component: UpsellPage,
+  head: () => ({
+    links: [{ rel: "canonical", href: PAGE_URL }],
+    meta: [{ property: "og:url", content: PAGE_URL }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Product",
+          name: "Planificador de Menús Semanales + Guía de Sustituciones Inteligentes",
+          description:
+            "Planificador semanal, tabla de sustituciones inteligentes y plan de comida alto en proteínas de 7 días con 2 bonos internacionales.",
+          image: comboMockup.url,
+          brand: { "@type": "Brand", name: "Cocina Saludable" },
+          offers: {
+            "@type": "Offer",
+            price: "9.90",
+            priceCurrency: "USD",
+            availability: "https://schema.org/InStock",
+            url: PAGE_URL,
+          },
+        }),
+      },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          name: "Cocina Saludable",
+          url: PAGE_URL,
+        }),
+      },
+    ],
+  }),
 });
 
 function Check() {
