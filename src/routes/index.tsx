@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { useEffect } from "react";
 import comboMockup from "@/assets/combo-hook.webp.asset.json";
 import comboMockupSm from "@/assets/combo-hook-sm.webp.asset.json";
 
@@ -70,6 +71,21 @@ function Check() {
 }
 
 function UpsellPage() {
+  useEffect(() => {
+    if (document.getElementById("hotmart-widget-script")) return;
+    const script = document.createElement("script");
+    script.id = "hotmart-widget-script";
+    script.src = "https://static.hotmart.com/checkout/widget.min.js";
+    script.async = true;
+    document.head.appendChild(script);
+
+    const link = document.createElement("link");
+    link.id = "hotmart-widget-style";
+    link.rel = "stylesheet";
+    link.href = "https://static.hotmart.com/css/hotmart-fb.min.css";
+    document.head.appendChild(link);
+  }, []);
+
   return (
     <main className="min-h-screen bg-background text-foreground">
       {/* Top alert bar */}
@@ -269,29 +285,15 @@ function UpsellPage() {
           </div>
         </section>
 
-        {/* CTA */}
+        {/* Hotmart Sales Funnel */}
         <section className="mt-10">
-          <button
-            type="button"
-            className="cta-glow group relative block w-full overflow-hidden rounded-full bg-gradient-gold px-6 py-6 text-center shadow-[0_20px_60px_-15px_rgba(212,175,55,0.6)] transition-transform duration-200 hover:scale-[1.015] active:scale-[0.99] sm:px-8 sm:py-7"
-          >
-            <span className="block text-lg font-extrabold uppercase leading-tight tracking-wide text-[#0a0a0a] sm:text-2xl">
-              ¡SÍ! QUIERO EL PLANIFICADOR, LA TABLA DE SUSTITUCIONES INTELIGENTES, EL PLAN DE COMIDA ALTO EN PROTEÍNAS (7 DÍAS / 1200 CALORÍAS) Y MIS BONOS
-            </span>
-            <span className="mt-2 block text-xs font-medium text-[#0a0a0a]/80 sm:text-sm">
-              Añadir a mi orden con 1 solo clic por $9.90
-            </span>
-          </button>
-
-          <div className="mt-12 text-center">
-            <a
-              href="#decline"
-              className="text-xs font-light tracking-wide text-muted-foreground/80 underline decoration-muted-foreground/40 underline-offset-[6px] transition-colors hover:text-platinum"
-            >
-              No, gracias. Prefiero continuar con mi pedido actual.
-            </a>
-          </div>
+          <div
+            id="hotmart-sales-funnel"
+            className="mx-auto flex w-full max-w-xl flex-col items-stretch justify-center gap-4"
+            style={{ minHeight: "184px" }}
+          />
         </section>
+
 
 
         <footer className="mt-16 border-t border-white/5 pt-8 text-center">
