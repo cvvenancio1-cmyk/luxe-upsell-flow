@@ -28,8 +28,26 @@
   --color-olive-glow: var(--olive-glow);
   --color-border: var(--border);
   --color-ring: var(--ring);
-  --font-display: "Cormorant Garamond", serif;
-  --font-sans: "Montserrat", sans-serif;
+  --font-display: "Cormorant Garamond", "Cormorant Fallback", serif;
+  --font-sans: "Montserrat", "Montserrat Fallback", sans-serif;
+}
+
+@font-face {
+  font-family: "Cormorant Fallback";
+  src: local("Georgia");
+  size-adjust: 89%;
+  ascent-override: 95%;
+  descent-override: 22%;
+  line-gap-override: 0%;
+}
+
+@font-face {
+  font-family: "Montserrat Fallback";
+  src: local("Arial");
+  size-adjust: 108%;
+  ascent-override: 90%;
+  descent-override: 22%;
+  line-gap-override: 0%;
 }
 
 :root {
