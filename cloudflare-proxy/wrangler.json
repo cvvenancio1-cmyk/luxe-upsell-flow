@@ -6,6 +6,7 @@
   "routes": [
     { "pattern": "venancioenterprises.com/ofertaupsellcocina", "zone_name": "venancioenterprises.com" },
     { "pattern": "venancioenterprises.com/ofertaupsellcocina/*", "zone_name": "venancioenterprises.com" },
-    { "pattern": "venancioenterprises.com/ofertaupsellcocina-assets/*", "zone_name": "venancioenterprises.com" }
+    { "pattern": "venancioenterprises.com/ofertaupsellcocina-assets/*", "zone_name": "venancioenterprises.com" },
+    { "pattern": "venancioenterprises.com/__l5e/*", "zone_name": "venancioenterprises.com" }
   ]
 }
