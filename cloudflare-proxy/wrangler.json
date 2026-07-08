@@ -1,0 +1,11 @@
+{
+  "name": "ofertaupsellcocina-proxy",
+  "main": "worker.js",
+  "compatibility_date": "2026-07-04",
+  "workers_dev": true,
+  "routes": [
+    { "pattern": "venancioenterprises.com/ofertaupsellcocina", "zone_name": "venancioenterprises.com" },
+    { "pattern": "venancioenterprises.com/ofertaupsellcocina/*", "zone_name": "venancioenterprises.com" },
+    { "pattern": "venancioenterprises.com/ofertaupsellcocina-assets/*", "zone_name": "venancioenterprises.com" }
+  ]
+}
