@@ -10,8 +10,6 @@ export const getRouter = () => {
     context: { queryClient },
     scrollRestoration: true,
     defaultPreloadStaleTime: 0,
-    basepath: "/upsellcocina",
-    trailingSlash: "always",
   });
 
   return router;

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://venancioenterprisespro.com/upsellcocina/sitemap.xml
+Sitemap: https://upsellcocina.venancioenterprisespro.com/sitemap.xml
