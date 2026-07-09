@@ -10,7 +10,7 @@ const TARGET_HOST = "cvvenancio1-cmyk-luxe-upsell-flow.cvvenancio1.workers.dev";
 // don't collide with cocinafitness's own /assets/* route on the same domain.
 // The files themselves still live at /assets/... inside this app's own
 // Worker, so we strip only the extra "-assets" prefix before forwarding.
-const ASSET_PREFIX = "/ofertaupsellcocina-assets";
+const ASSET_PREFIX = "/upsellcocina-assets";
 
 // A couple of images in this project are referenced with Lovable's own
 // asset-CDN path (/__l5e/assets-v1/...). Those files are only served by
