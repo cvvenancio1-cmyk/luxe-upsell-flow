@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://luxe-upsell-flow.lovable.app/sitemap.xml
+Sitemap: https://venancioenterprisespro.com/upsellcocina/sitemap.xml
